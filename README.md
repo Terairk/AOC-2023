@@ -4,6 +4,8 @@ Welcome to the Advent of Code[^aoc] Kotlin project created by [terairk][github] 
 
 In this repository, I'm gonna be doing all my solutions in Kotlin but may occasionally choose to also write my solutions in another language for practice.
 
+All input files should be placed in a folder called TestFiles ie "src/TestFiles" with the files titled "dayN.txt" where N is the day number.
+
 
 [aoc]: https://adventofcode.com
 [docs]: https://kotlinlang.org/docs/home.html
