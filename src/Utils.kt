@@ -74,3 +74,20 @@ operator fun String.times(n: Int): String {
     }
     return sb.toString()
 }
+
+// Big integer Utils
+operator fun BigInteger.times(intValue: Int): BigInteger {
+    return this.multiply(BigInteger.valueOf(intValue.toLong()))
+}
+
+operator fun BigInteger.div(intValue: Int): BigInteger {
+    return this.divide(BigInteger.valueOf(intValue.toLong()))
+}
+
+operator fun BigInteger.plus(intValue: Int): BigInteger {
+    return this.add(BigInteger.valueOf(intValue.toLong()))
+}
+
+operator fun BigInteger.minus(intValue: Int): BigInteger {
+    return this.subtract(BigInteger.valueOf(intValue.toLong()))
+}
