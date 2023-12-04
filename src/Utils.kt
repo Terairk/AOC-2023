@@ -12,7 +12,7 @@ import kotlin.math.*
  * Reads lines from the given input txt file.
  */
 fun readInput(name: String) = Path("src/$name.txt").readLines()
-private inline fun <T> List<T>.indexOfFirstOrNull(
+fun <T> List<T>.indexOfFirstOrNull(
     block: (T) -> Boolean,
 ): Int? = indexOfFirst(block).takeIf { it != -1 }
 
