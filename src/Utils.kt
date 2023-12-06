@@ -92,6 +92,22 @@ operator fun BigInteger.minus(intValue: Int): BigInteger {
     return this.subtract(BigInteger.valueOf(intValue.toLong()))
 }
 
+operator fun BigInteger.times(intValue: Long): BigInteger {
+    return this.multiply(BigInteger.valueOf(intValue.toLong()))
+}
+
+operator fun BigInteger.div(intValue: Long): BigInteger {
+    return this.divide(BigInteger.valueOf(intValue.toLong()))
+}
+
+operator fun BigInteger.plus(intValue: Long): BigInteger {
+    return this.add(BigInteger.valueOf(intValue.toLong()))
+}
+
+operator fun BigInteger.minus(intValue: Long): BigInteger {
+    return this.subtract(BigInteger.valueOf(intValue.toLong()))
+}
+
 operator fun BigInteger.rangeTo(other: BigInteger) =
     BigIntegerRange(this, other)
 
